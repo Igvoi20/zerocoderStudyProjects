@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="user-info">
+        <div class="user-avatar"></div>
+        <div>
+          <div class="username" id="username">Пользователь</div>
+          <button class="edit-btn" id="updateUsername">✎</button>
+        </div>
+      </div>
+      <div class="live-toggle">
+        <label class="switch">
+          <input type="checkbox" id="liveToggle" checked>
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label">LIVE</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="live-section">
+        <h3 id="liveStatus">Сейчас просматривают</h3>
+        <div id="liveVideos" class="live-videos">
+          <!-- Live видео будут здесь -->
+        </div>
+      </section>
+
+      <section class="history-section">
+        <div class="section-header">
+          <h3>Недавно просмотрено</h3>
+          <button class="clear-btn" id="clearHistory">Очистить</button>
+        </div>
+        <div id="watchHistory" class="history-videos">
+          <!-- История просмотров будет здесь -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        👥 Ваши друзья видят, что вы смотрите в реальном времени
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
